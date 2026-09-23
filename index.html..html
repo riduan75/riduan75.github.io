@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Riduan Sarker | CS Graduate &amp; Former Cyber Athlete</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#070b14;--panel:#0e1524;--ink:#e9f1ff;--muted:#8fa0bd;--line:#1e2c47;
+  --cyan:#19e3ff;--amber:#ff9f1c;--red:#ff3d5a;--green:#3dff9a;
+  --head:"Rajdhani","Arial Narrow",Impact,sans-serif;--body:"Barlow",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070b14}}
+:root[data-theme="dark"]{--bg:#070b14}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.7 var(--body);
+  background-image:linear-gradient(#19e3ff0d 1px,transparent 1px),linear-gradient(90deg,#19e3ff0d 1px,transparent 1px);background-size:44px 44px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font:700 20px var(--head);letter-spacing:.06em;text-transform:uppercase}
+nav b{color:var(--cyan)}
+nav .links{display:flex;gap:22px;font:600 16px var(--head)}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--cyan)}
+.hero{position:relative;padding-bottom:72px;background:radial-gradient(700px 420px at 90% 10%,#19e3ff26,transparent 65%),radial-gradient(600px 400px at 0% 90%,#ff3d5a1f,transparent 65%);border-bottom:1px solid var(--line);overflow:hidden}
+.hero::after{content:"";position:absolute;left:0;right:0;height:120px;top:-120px;background:linear-gradient(transparent,#19e3ff22,transparent);animation:scan 6s linear infinite;pointer-events:none}
+@keyframes scan{to{transform:translateY(900px)}}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center;padding-top:48px;position:relative;z-index:1}
+.tag{display:inline-block;font:700 15px var(--head);letter-spacing:.14em;color:var(--green);border:1px solid var(--green);padding:4px 14px;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);margin-bottom:22px}
+h1{font:700 clamp(46px,8vw,92px)/.98 var(--head);text-transform:uppercase;letter-spacing:.01em;margin:0 0 10px}
+h1 span{color:var(--cyan);text-shadow:0 0 28px #19e3ff88}
+.sub{font:600 clamp(20px,3vw,28px) var(--head);color:var(--amber);letter-spacing:.08em;text-transform:uppercase;margin:0 0 20px}
+.lead{max-width:54ch;color:#c4d1e8;margin:0 0 32px;font-size:18px}
+.btns{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 30px;font:700 18px var(--head);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;clip-path:polygon(14px 0,100% 0,calc(100% - 14px) 100%,0 100%);transition:filter .15s,transform .15s}
+.btn:hover{filter:brightness(1.15);transform:translateY(-2px)}
+.btn.p{background:var(--cyan);color:#021018}
+.btn.s{background:var(--amber);color:#1a0d00}
+.btn svg{width:20px;height:20px;fill:currentColor}
+.hud{background:#0b1322ee;border:1px solid var(--cyan);box-shadow:0 0 40px #19e3ff22,inset 0 0 30px #19e3ff10;padding:22px 24px;clip-path:polygon(0 0,calc(100% - 24px) 0,100% 24px,100% 100%,24px 100%,0 calc(100% - 24px))}
+.hud h2{font:700 15px var(--head);letter-spacing:.18em;color:var(--cyan);margin:0 0 14px;text-transform:uppercase}
+.hud dl{margin:0}
+.hud .r{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:16px}
+.hud .r:last-child{border:0}
+.hud dt{color:var(--muted);font:600 15px var(--head);letter-spacing:.1em;text-transform:uppercase}
+.hud dd{margin:0;font-weight:600;text-align:right}
+.hud dd.on{color:var(--green)}
+section{padding:68px 0;border-bottom:1px solid var(--line)}
+h2.t{font:700 clamp(32px,5vw,46px)/1.1 var(--head);text-transform:uppercase;letter-spacing:.03em;margin:0 0 22px;display:flex;align-items:center;gap:14px}
+h2.t::before{content:"";width:34px;height:6px;background:var(--red);box-shadow:0 0 14px var(--red)}
+p{margin:0 0 16px;max-width:68ch;color:#c4d1e8}
+.chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:22px 0 0;padding:0}
+.chips li{font:600 17px var(--head);letter-spacing:.06em;text-transform:uppercase;padding:6px 18px;border:1px solid var(--cyan);color:var(--cyan);background:#19e3ff12;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+.card{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--amber);padding:26px 28px}
+.card h3{font:700 26px/1.2 var(--head);text-transform:uppercase;letter-spacing:.04em;margin:0 0 6px}
+.card .m{color:var(--amber);font:600 16px var(--head);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+.card p:last-child{margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:8px}
+.sk{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--cyan);padding:20px 22px;transition:transform .2s,border-color .2s}
+.sk:hover{transform:translateY(-5px);border-color:var(--amber)}
+.sk:nth-child(2n){border-top-color:var(--red)}.sk:nth-child(3n){border-top-color:var(--green)}
+.sk h3{font:700 21px var(--head);letter-spacing:.05em;text-transform:uppercase;margin:0 0 6px}
+.sk p{margin:0;font-size:15.5px;color:var(--muted)}
+.cta{text-align:center;border:0;padding-bottom:40px}
+.cta h2.t{justify-content:center}.cta h2.t::before{display:none}.cta p{margin:0 auto 28px}.cta .btns{justify-content:center}
+footer{text-align:center;color:var(--muted);font:500 14px var(--body);padding:8px 0 48px;letter-spacing:.04em}
+@media (max-width:820px){
+  .hero-grid{grid-template-columns:1fr}
+  nav .links{gap:14px}
+  section{padding:52px 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero::after{animation:none}.btn,.sk{transition:none}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <nav aria-label="Main"><span>R<b>.</b>Sarker</span>
+      <div class="links"><a href="#about">About</a><a href="#esports">Esports</a><a href="#education">Education</a><a href="#contact">Contact</a></div>
+    </nav>
+    <div class="hero-grid">
+      <div>
+        <div class="tag">OPEN TO WORK</div>
+        <h1>Riduan <span>Sarker</span></h1>
+        <p class="sub">CS Graduate &nbsp;/&nbsp; Former Cyber Athlete</p>
+        <p class="lead">I played competitive Rainbow Six Siege with The Raven Knights and competed in ESL, where I learned teamwork, fast decisions and staying calm under pressure. Now I bring that mindset to software development.</p>
+        <div class="btns">
+          <a class="btn p" href="https://github.com/riduan75" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.71 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>Check my work</a>
+          <a class="btn s" href="#contact">Hire me</a>
+        </div>
+      </div>
+      <aside class="hud" aria-label="Player card">
+        <h2>Player card</h2>
+        <dl>
+          <div class="r"><dt>Player</dt><dd>Riduan Sarker</dd></div>
+          <div class="r"><dt>Class</dt><dd>CS Graduate</dd></div>
+          <div class="r"><dt>Squad</dt><dd>The Raven Knights</dd></div>
+          <div class="r"><dt>Game</dt><dd>Rainbow Six Siege</dd></div>
+          <div class="r"><dt>Arena</dt><dd>ESL</dd></div>
+          <div class="r"><dt>Academy</dt><dd>BRAC University</dd></div>
+          <div class="r"><dt>Status</dt><dd class="on">Ready to deploy</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="about">
+    <h2 class="t">About me</h2>
+    <p>I studied Computer Science at BRAC University, where I built a solid base in programming, data structures, algorithms and software engineering. I learn best by building, so I turn what I study into real projects, including a rental web app and a 2D game. You can check all of my work on <a href="https://github.com/riduan75" target="_blank" rel="noopener"><strong>my GitHub</strong></a>.</p>
+    <p>Outside of code, I competed as a cyber athlete, including in ESL. That experience taught me to communicate clearly, trust my team and keep improving after every round.</p>
+    <ul class="chips" aria-label="Skills"><li>Problem solving</li><li>Data structures &amp; algorithms</li><li>Teamwork</li><li>Git &amp; GitHub</li><li>Quick learner</li></ul>
+  </section>
+
+  <section id="esports">
+    <h2 class="t">Esports experience</h2>
+    <div class="card">
+      <h3>The Raven Knights</h3>
+      <div class="m">Cyber athlete &nbsp;|&nbsp; Rainbow Six Siege &nbsp;|&nbsp; ESL</div>
+      <p>I competed as part of an esports team in a tactical five-vs-five shooter that rewards planning, coordination and precise execution. I also played in ESL, one of the biggest names in competitive gaming, where every match is played against organized teams under real tournament pressure.</p>
+    </div>
+    <div class="grid">
+      <div class="sk"><h3>Teamwork</h3><p>Winning depends on the whole squad working as one.</p></div>
+      <div class="sk"><h3>Communication</h3><p>Clear, short calls that keep everyone on the same page.</p></div>
+      <div class="sk"><h3>Strategy</h3><p>Planning ahead and adapting when the situation changes.</p></div>
+      <div class="sk"><h3>Under pressure</h3><p>Making sound decisions quickly when it matters.</p></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2 class="t">Education</h2>
+    <div class="card" style="border-left-color:var(--cyan)">
+      <h3>BSc in Computer Science and Engineering</h3>
+      <div class="m" style="color:var(--cyan)">BRAC University, Dhaka &nbsp;|&nbsp; Graduated 2026</div>
+      <p>Coursework covered programming, data structures and algorithms, databases, operating systems, computer networks and software engineering.</p>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <h2 class="t">Ready to join your team</h2>
+    <p>I'm looking for roles and internships where I can contribute, learn and grow. Send me a message and I'll reply.</p>
+    <div class="btns">
+      <a class="btn p" href="mailto:riduan.sarker75@gmail.com">riduan.sarker75@gmail.com</a>
+      <a class="btn s" href="https://github.com/riduan75" target="_blank" rel="noopener">github.com/riduan75</a>
+    </div>
+  </section>
+  <footer>&copy; 2026 Riduan Sarker &nbsp;|&nbsp; Computer Science, BRAC University</footer>
+</main>
+</body>
+</html>
